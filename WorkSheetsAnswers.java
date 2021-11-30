@@ -1,7 +1,7 @@
 import java.util.Scanner;
 import java.lang.Math;
 
-public class WorksheetTwoAnswers {
+public class WorkSheetsAnswers {
 
     public static void main(String[] args){
         Scanner input = new Scanner(System.in);
@@ -126,66 +126,47 @@ public class WorksheetTwoAnswers {
                 Write a sequential Java program to convert a two digit 
                 octal number into its equivalent binary and decimal numbers.
                 */
-               /* System.out.println("Please input a base 8 number (Octal)");
-                int Octal = input.nextInt();
-                int XQuestion9 = 0;
-                int z = 1;
-                int p = 0;
-                int ResultQ9W2 = 0;
-                int OctalCharPosition = 0;
-                
-                while (XQuestion9 == 0) //While loop to be able to end the program
-                    {
-                        String OctalString = String.valueOf(Octal); //Octal but in string to get char and length.
-                        int OctalLength = OctalString.length(); //The length of the number we are converting.
-                        
-                        for(int XForLoopQ9W2 = 0; XForLoopQ9W2 == 0;) //for loop that only ends with Varible defined is not equal to zero
-                        {
-                            if (z != OctalLength)
-                            {
-                                OctalCharPosition = parseInt(OctalString.charAt(OctalLength - z)); //Change the value from char to int in the specific position of the char
-                                System.out.println(OctalCharPosition);
-                                ResultQ9W2 += (int) (OctalCharPosition* (Math.pow(8, (0 + p))));// adds one to the power every time
-                                System.out.println(ResultQ9W2);
-                                if (OctalCharPosition >= 8 || OctalCharPosition < 0)
-                                {
-                                    break;
-                                }
-                                z++;
-                                p++;
-                            }
-                            else if (z >= OctalLength)
-                            {
-                                OctalCharPosition = OctalString.charAt(OctalLength - z);
-                                ResultQ9W2 += (int) (OctalCharPosition* (Math.pow(8, 0 + z)));
-                                System.out.println("The Final Result will be " + ResultQ9W2 + " Base");
-                                XForLoopQ9W2++;
-                            }
-                         }
-
-                    XQuestion9++;
-
+                int octalNumber = 4125134;
+                int countsOfOctal = 0;
+                int temp = 0;
+                int DecNumber = 0;
+                String result = "";
+                temp = octalNumber;
+        
+        
+                while(temp > 0){
+                    temp /= 10;
+                    countsOfOctal++;
                 }
+                temp = octalNumber;
+                for (int i = 0; i < countsOfOctal; i++){
+                    DecNumber += (temp % 10) * Math.pow(8, i);
+                    temp /= 10;
+                }
+        
+                while(DecNumber != 0){
+                    result = (DecNumber%2) + result;
+                    DecNumber /= 2;
+                }
+        
+                System.out.println(result);
+                
+                
+            // Q9 Made Sayed Abdelhafiz.
+                
+            }
 
-                */
-            }
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
             }
             
-            
+            else if (UserInputWorkSheet == 3)
+            {
+                System.out.println("Which question?");
+                int UserInputWorkSheet1 = input.nextInt();
+
+
+
+
+            }
             
             
             
